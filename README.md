@@ -12,10 +12,14 @@ another sound sent to the external sidechain.
 
 | Platform | Format | Installer |
 | --- | --- | --- |
-| Windows 10/11, 64-bit | VST3 | [Download EXE](https://github.com/kikk-i/kick-air/releases/download/v0.3.1-beta.1/KickAir-0.3.1-Windows-x64.exe) |
-| macOS 11+, Apple Silicon and Intel | AU and VST3 | [Download PKG](https://github.com/kikk-i/kick-air/releases/download/v0.3.1-beta.1/KickAir-0.3.1-macOS.pkg) |
+| Windows 10/11, 64-bit | VST3 | [Download EXE](https://github.com/kikk-i/kick-air/releases/download/v0.3.2-beta.1/KickAir-0.3.2-Windows-x64.exe) |
+| macOS 11+, Apple Silicon and Intel | AU and VST3 | [Download PKG](https://github.com/kikk-i/kick-air/releases/download/v0.3.2-beta.1/KickAir-0.3.2-macOS.pkg) |
 
-Version 0.3.1 beta. No account, activation or time limit.
+Version 0.3.2 beta. No account, activation or time limit.
+
+This update replaces all 16 factory curves and shows preset names without
+thumbnail graphics on both platforms. Custom curve points are unchanged. Factory
+preset selections in older projects may sound different after updating.
 
 Save your project and close your DAW before installing. Restart it afterwards and
 rescan plugins if needed. These are unsigned beta installers. The macOS package
@@ -49,10 +53,9 @@ Please report your DAW, OS, plugin format, sample rate and buffer size. Routing,
 clicks, project recall, offline export and display scaling are useful things to
 check. [Testing checklist](TESTING.md) and [bug reports](https://github.com/kikk-i/kick-air/issues/new/choose).
 
-macOS AU and VST3 passed native validation and test-host checks. Windows passed
-runtime, GUI, install and uninstall checks using Wine on macOS. Testing in DAWs
-on physical Windows PCs is still needed. Compatibility with every DAW is not
-confirmed. [Validation summary](VALIDATION.md).
+See the [validation summary](VALIDATION.md) for checks on this build. This update
+was not manually retested in DAWs. Testing on physical Windows PCs is still
+needed. Compatibility with every DAW is not confirmed.
 
 This repository contains downloads and documentation. Plugin source code is not
 included. The screenshot uses generated test audio.

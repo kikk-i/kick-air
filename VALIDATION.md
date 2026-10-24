@@ -1,34 +1,23 @@
 # Validation summary
 
-Kick Air 0.3.1 beta, October 24, 2026.
+Kick Air 0.3.2 beta, October 24, 2026.
 
-## Audio and plugin checks
+## Checks on this build
 
-- DSP regression suite: 1,426,710 assertions passed.
+- Universal macOS AU and VST3 builds completed for Apple Silicon and Intel.
+- Native Windows x64 VST3 build completed.
+- DSP regression suite: 1,426,710 assertions passed on macOS and under Wine.
 - Official VST3 validator: 47 passed, 0 failed on each platform build.
-- macOS AU: strict native validation passed. Intel AU validation also passed
-  using Rosetta on Apple Silicon.
 - Native macOS VST3 test host: 79,631 checks passed.
-- Windows VST3 test host: 79,516 checks passed using Wine 11.0 on macOS.
-
-The plugin hosts exercise the real binaries, main and sidechain inputs, mono and
-stereo, 32-bit and 64-bit buffers, automation, MIDI, latency, tempo and saved state.
-
-## GUI and installers
-
-- Windows native controls, curve dragging, numeric input and Details passed
-  runtime checks at 100, 150 and 200 percent scaling.
-- Windows installation, installed-plugin runtime, app registration, uninstall and
-  preservation of an unrelated test file passed using Wine.
-- The English macOS package installed successfully for the current user. Its AU
-  and VST3 binaries match the validated builds.
-- Public installer payloads contain English guides. The audio binaries are
-  unchanged from the tested 0.3.1 builds.
+- Windows VST3 test host: 79,516 checks passed using Wine 11.0 on macOS, including native controls and 100/150/200 percent DPI.
+- macOS bundle signatures verified during packaging. These are ad-hoc signatures, not Developer ID signatures.
+- Windows packaging verified the exact current binary and runtime evidence.
+- Preset thumbnail drawing was removed from both native menus. All factory curves use the new library.
 
 ## Limits
 
-Wine tests are not a substitute for testing in a DAW on a physical Windows PC.
-Physical Intel Mac testing and compatibility with every DAW are not confirmed.
-These are unsigned beta installers. The macOS package is not notarized.
+This update was not manually retested in DAWs or installed on physical Windows or Intel Mac hardware. AU host validation and installer install/uninstall checks from 0.3.1 were not repeated for 0.3.2. Automated host checks do not establish compatibility with every DAW.
 
-The release includes SHA256SUMS.txt for checking downloaded files.
+The installers are unsigned, and the macOS package is not notarized. Antivirus detections for an earlier Windows installer remain unresolved. A changed hash is not proof of safety or a fix for those detections.
+
+SHA256SUMS.txt identifies the exact release downloads.

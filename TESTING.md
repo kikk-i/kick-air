@@ -1,6 +1,6 @@
 # Testing Kick Air
 
-Version 0.3.1 beta. No activation or time limit.
+Version 0.3.2 beta. No activation or time limit.
 
 Please use a saved copy of a project for your first test.
 

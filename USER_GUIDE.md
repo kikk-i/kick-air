@@ -1,6 +1,6 @@
 # Kick Air user guide
 
-Version 0.3.1 beta
+Version 0.3.2 beta
 
 Kick Air lowers the volume of a bass or another track when a sound arrives at its
 external sidechain input. The sidechain source can be a kick, snare or any other
@@ -16,7 +16,7 @@ AAX, VST2, Linux and 32-bit Windows hosts are not included.
 ## Install on Windows
 
 1. Save your project and close your DAW.
-2. Run `KickAir-0.3.1-Windows-x64.exe` and complete the setup.
+2. Run `KickAir-0.3.2-Windows-x64.exe` and complete the setup.
 3. Open your DAW and rescan VST3 plugins if Kick Air does not appear.
 
 The installer needs administrator permission and places the plugin in:
@@ -33,7 +33,7 @@ Uninstall. Your DAW projects are kept.
 ## Install on macOS
 
 1. Save your project and close your DAW.
-2. Open `KickAir-0.3.1-macOS.pkg` and install for your current user account.
+2. Open `KickAir-0.3.2-macOS.pkg` and install for your current user account.
 3. Open your DAW and rescan plugins if Kick Air does not appear.
 
 The installer includes universal AU and VST3 plugins:
@@ -107,7 +107,8 @@ DAW. The main input receives the bass; the auxiliary input receives the trigger.
   the knob for 10 percent steps or type an exact value. Double-click resets to 100.
 - Flow: character of the return. Lower values return later and more steeply;
   higher values return earlier and more gently. Double-click resets to 50.
-- Shape: choose one of 16 starting curves or edit a Custom curve.
+- Shape: choose one of 16 named starting curves or edit a Custom curve. The menu
+  shows names only; the selected curve appears in the main display.
 - Note division: choose 1/8, 1/4, 1/2 or one bar. This changes the response duration.
   In Audio mode, each detected hit can trigger the curve, including faster hits.
 - Auto: follows the project tempo. Type a BPM value to use a manual tempo, or
@@ -184,3 +185,9 @@ buffer size and steps to reproduce. Include routing screenshots when relevant.
 See TESTING.md in the GitHub repository for the feedback checklist.
 
 created by Krystian Modzelan
+
+## Updating from 0.3.1
+
+Version 0.3.2 replaces all factory curves. Projects using a factory shape may
+sound different after updating. Save or export important projects first. Custom
+curve points, parameter IDs and plugin identifiers are unchanged.
